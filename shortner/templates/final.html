@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+	{% if status == True %}
+		<p>Your url was successfully shortened!</p>
+		<p>The url is <a href = {{ new_url }}/>{{ new_url }}</a></p>
+	{% else %}
+		<p>There was some problem and your url was not added</p>
+	{% endif %}
+{% endblock %}
